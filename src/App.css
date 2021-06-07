@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+/* Global Styles */
+:root {
+  /* Colors */
+  --green: #3ee9e5;
+  --blue: #093f68;
+  --grey: #777f98;
+  --red: #ff2965;
+  --black: #080c20;
+  --white: #ffffff;
+
+  /* Font Size */
+  --font-size-biggest: 48px;
+  --line-height-biggest: 56px;
+  --font-size-large: 40px;
+  --line-height-large: 55px;
+  --font-size-medium: 32px;
+  --line-height-medium: 44px;
+  --font-size-small: 18px;
+  --line-height-small: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  color: var(--white);
+  background-color: var(--black);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.biggest-text {
+  font-size: var(--font-size-biggest);
+  line-height: var(--line-height-biggest);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.smallest-text {
+  color: var(--grey);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+/* Header Styles */
+.header-main-flex-container {
+  margin-top: 230px;
+  margin-bottom: 200px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.header-flex-container {
+  background-image: url("./images/bg-hero-squiggle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 445px;
+  height: 480px;
+  display: flex;
+
+  text-align: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-grow: 1.5;
 }
 
-.App-link {
-  color: #61dafb;
+.span-color {
+  color: var(--green);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-image-left {
+  padding-right: 100px;
+  width: 400px;
+  height: 445px;
+}
+
+.header-image-right {
+  padding-left: 100px;
+  width: 400px;
+  height: 445px;
 }
